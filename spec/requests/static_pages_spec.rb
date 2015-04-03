@@ -23,8 +23,8 @@ describe "Static pages" do
     let(:heading)    { 'Help' }
     let(:page_title) { 'Help' }
     it_should_behave_like "all static pages"
-    #it { should have_content('Help') }
-    #it { should have_title(full_title('Help')) }
+    it { should have_content('Help') }
+    it { should have_title(full_title('Help')) }
   end
 
   describe "About page" do
@@ -32,8 +32,8 @@ describe "Static pages" do
     let(:heading)    { 'About Us' }
     let(:page_title) { 'About Us' }
     it_should_behave_like "all static pages"
-    #it { should have_content('About Us') }
-    #it { should have_title(full_title('About Us')) }
+    it { should have_content('About Us') }
+    it { should have_title(full_title('About Us')) }
   end
 
   describe "Contact page" do
@@ -41,8 +41,8 @@ describe "Static pages" do
     let(:heading)    { 'Contact' }
     let(:page_title) { 'Contact' }
     it_should_behave_like "all static pages"
-    #it { should have_selector('h1',text: 'Contact') }
-    #it { should have_title(full_title('Contact')) }
+    it { should have_selector('h1',text: 'Contact') }
+    it { should have_title(full_title('Contact')) }
   end
 
   it "should have the right links on the layout" do
